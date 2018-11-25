@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
 })
 export class RouterTwoComponent {
   title = 'Router Two Page';
-
 }
