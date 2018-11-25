@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {RouterOneComponent} from '../routings/routerOne.component';
 import {RouterTwoComponent} from '../routings/routerTwo.component';
 import {RouterThreeComponent} from '../routings/routerThree.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -16,7 +17,8 @@ import {RouterThreeComponent} from '../routings/routerThree.component';
     RouterThreeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
