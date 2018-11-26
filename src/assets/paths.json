@@ -1,0 +1,15 @@
+[{
+  "id": "001",
+  "name": "root-one",
+  "path": "rootOne"
+},
+  {
+    "id": "002",
+    "name": "root-two",
+    "path": "rootTwo"
+  },
+  {
+    "id": "003",
+    "name": "root-three",
+    "path": "rootThree"
+  }]

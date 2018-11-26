@@ -6,5 +6,20 @@
     <a routerLink="/rootTwo">Router_Two_Pg</a> |
     <a routerLink="/rootThree">Router_Three_Pg</a>
   </nav>
+  <table *ngIf="arrPaths">
+    <!-- ADD HEADERS -->
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Path</th>
+    </tr>
+
+    <!-- BIND ARRAY TO TABLE -->
+    <tr *ngFor="let path of arrPaths">
+      <td>{{path.id}}</td>
+      <td>{{path.name}}</td>
+      <td>{{path.path}}</td>
+    </tr>
+  </table>
 </div>
 <router-outlet></router-outlet>
