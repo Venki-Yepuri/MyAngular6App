@@ -6,20 +6,34 @@
     <a routerLink="/rootTwo">Router_Two_Pg</a> |
     <a routerLink="/rootThree">Router_Three_Pg</a>
   </nav>
-  <table *ngIf="arrPaths">
-    <!-- ADD HEADERS -->
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Path</th>
-    </tr>
+  <br/>
+  <h6>Two Way Binding</h6>
+  <input type='text' [(ngModel)]='name'/>
+  <div>Name is: {{name}}</div>
+  <br/>
+  <h6>Service</h6>
+  <div style="text-align: -webkit-center;">
+    <table *ngIf="arrPaths">
+      <!-- ADD HEADERS -->
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Path</th>
+      </tr>
 
-    <!-- BIND ARRAY TO TABLE -->
-    <tr *ngFor="let path of arrPaths">
-      <td>{{path.id}}</td>
-      <td>{{path.name}}</td>
-      <td>{{path.path}}</td>
-    </tr>
-  </table>
+      <!-- BIND ARRAY TO TABLE -->
+      <tr *ngFor="let path of arrPaths">
+        <td>{{path.id}}</td>
+        <td>{{path.name}}</td>
+        <td>{{path.path}}</td>
+      </tr>
+    </table>
+  </div>
+  <br/>
+  <h6>Event Binding</h6>
+  <!--<button class='btn' (click)='submit()'>Submit</button>-->
+  <p>{{submitText}}</p>
+  <button class='btn' on-click='submit();'>Submit</button>
+
 </div>
 <router-outlet></router-outlet>
